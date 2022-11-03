@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(199, 214, 217);
+}
+
+.parent {
+    height: 88vh;
+    width: 74%;
+    background-color: aliceblue;
+    position: absolute;
+    right: 22%;
+    top: 6%;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 12px white, 0px 5px 12px -2px rgba(25, 39, 102, 0.247);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content {
+    height: 95%;
+    width: 33%;
+    background-color: rgb(54, 76, 245);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.content .one {
+    height: 10%;
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.content .one p {
+    font-size: xx-small;
+    color: white;
+    letter-spacing: .12rem;
+}
+
+.content .two {
+    height: 40%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content .two p {
+    color: rgb(147, 160, 202);
+    font-size: 14px;
+
+}
+
+.content .two h2 {
+    color: white;
+}
+
+.content .three {
+    height: 40%;
+    width: 86%;
+    display: flex;
+}
+
+.content .three #myCarousel {
+    width: 100%;
+
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(36, 29, 242);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.item .para {
+    height: 50%;
+    color: rgba(245, 245, 245, 0.795);
+    font-size: 1.14rem;
+    padding: 6px 2px;
+
+}
+
+.item .data {
+    width: 90%;
+    height: 30%;
+    padding: 6px 5px;
+    display: flex;
+}
+
+.data .name {
+    margin-left: 10px;
+}
+
+.item .data h6 {
+    color: white;
+}
+
+.item .data p {
+    color: rgba(245, 245, 245, 0.795);
+    font-size: 1.14rem;
+
+}
+
+.item .data img {
+    width: 25%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none !important;
+    filter: none !important;
+}
+
+.form {
+    height: 90%;
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.form .header {
+    height: 10%;
+}
+
+.form h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.form p {
+    font-size: 1.12rem;
+
+}
+
+.form a {
+    text-decoration: none;
+    color: rgb(54, 76, 245);
+    font-weight: bold;
+    font-size: 1.2rem;
+
+
+}
+
+.form .inputs {
+    width: 100%;
+    height: 85%;
+    padding-top: 25px;
+}
+
+.form form {
+    height: 99%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.radio {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 3px;
+}
+
+.custom-control {
+    border: 2px solid rgb(186, 185, 196);
+    color: black;
+    width: 42%;
+    padding: 8px 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.custom-control-label {
+    margin-left: -20px;
+    font-size: 1.15rem;
+    width: 80%;
+    text-align: start;
+}
+
+.custom-control-input:checked~label {
+    color: blue;
+}
+
+.custom-control:has(input:checked) {
+    border: 1px solid rgba(47, 40, 245, 0.918);
+}
+
+.form .full {
+    width: 90%;
+    outline: none;
+    border: 1px solid rgb(155, 153, 153);
+    padding: 12px 10px;
+    font-size: 1.15rem;
+    border-radius: 5px;
+}
+
+.form .inputs p {
+    color: rgb(153, 152, 152);
+}
+
+.form button {
+    background-color: rgba(47, 40, 245, 0.918);
+    width: 30%;
+    padding: 10px 0;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 705px) {
+    .parent {
+        /* height: 88vh; */
+        width: 88%;
+        right: 10%;
+    }
+
+    .form button {
+        width: 40%;
+        padding: 10px 0;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .parent {
+        height: 96vh;
+        width: 96%;
+        right: 3%;
+        top: 2%;
+    }
+
+    .content .two {
+        height: 30%;
+        width: 90%;
+    }
+
+    .content .three {
+        width: 86%;
+
+    }
+
+    .form .full,
+    .radio {
+        width: 98%;
+    }
+
+    .custom-control {
+        width: 49%;
+
+    }
+
+    .form button {
+        width: 60%;
+    }
+
+    .content {
+        width: 36%;
+    }
+
+    .form {
+        width: 56%;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .content .three {
+        height: 58%;
+    }
+
+    .content .three img {
+        width: 40px;
+        height: 20%;
+    }
+
+
+}
+
+@media only screen and (max-width: 380px) {
+
+    .parent {
+        flex-direction: column;
+        height: min-content;
+
+    }
+
+    .content {
+        width: 90%;
+        margin: 15px 0;
+        padding-top: 5px;
+    }
+
+    .content .data {
+        margin: 10px 0;
+    }
+
+    .form {
+        width: 90%;
+        height: 50%;
+        padding: 20px 10px;
+    }
+}
