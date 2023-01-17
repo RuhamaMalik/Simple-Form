@@ -36,7 +36,7 @@ body {
 }
 
 .content .one {
-    height: 15%;
+    height: 10%;
     width: 80%;
     display: flex;
     align-items: flex-end;
@@ -301,9 +301,15 @@ body {
     .content {
         width: 90%;
         margin: 15px 0;
-        padding-top: 55px;
+        padding-top: 5px;
     }
+    .content .one {
+        height: 18%;
+    }
+    .content .one p{
+font-size: small;    }
 
+    
     .content .data {
         margin: 10px 0;
     }
