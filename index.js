@@ -3,7 +3,7 @@ import { auth } from "./assets/js/firebase-auth.js";
 
 /// SignUp Function
 let signUpBtn = document.getElementById("btn");
-signUpBtn.addEventListener("click", ()=>{
+signUpBtn.addEventListener('click', ()=>{
 
     let email = document.getElementById("sEmail").value;
     let password = document.getElementById("sPassword").value;
@@ -23,35 +23,10 @@ signUpBtn.addEventListener("click", ()=>{
 })
 
 
-// const signInButton = document.getElementById("lbtn");
 
-// signInButton.addEventListener("click", () => {
-//     let email = document.getElementById("lEmail").value;
-//     let password = document.getElementById("lPassword").value;
-
-//     const auth = getAuth();
-//     signInWithEmailAndPassword(auth, email, password)
-//       .then((userCredential) => {
-//         const user = userCredential.user;
-//         console.log(user);
-//       })
-//       .catch((error) => {
-//         const errorCode = error.code;
-//         const errorMessage = error.message;
-//         console.log(errorCode, errorMessage);
-//       });
-// });
-
-document.addEventListener("DOMContentLoaded", () => {
-    let logoutButton = document.getElementById("logout");
-
-    logoutButton.addEventListener("click", () => {
-        alert("hhjhjhj");
-        // Add your logout code here
-    });
-});
-
-
+// const logout = (e)=>{
+//   alert(e)
+// }
 
 
 
