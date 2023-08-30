@@ -5,7 +5,7 @@ import { auth } from "./firebase-auth.js";
 
 let logoutBtn = document.getElementById('logout');
    
-logoutBtn.addEventListener('click', (e)=>{
+logoutBtn.addEventListener('click', ()=>{
     signOut(auth)
     .then(() => {
         // console.log("User logged out successfully");

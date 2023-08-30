@@ -1,4 +1,4 @@
-import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-auth.js";
+import { signInWithEmailAndPassword ,onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.3.0/firebase-auth.js";
 import { auth } from "./firebase-auth.js";
 
     let signInButton = document.getElementById("lbtn");
@@ -10,7 +10,7 @@ import { auth } from "./firebase-auth.js";
         signInWithEmailAndPassword(auth, email, password)
           .then((userCredential) => {
             const user = userCredential.user;
-            alert("login successful");
+            alert("login successfully");
             window.location ="../html/home.html"
 
           })
@@ -20,3 +20,5 @@ import { auth } from "./firebase-auth.js";
             console.log(errorCode, errorMessage);
           });
     });
+
+
