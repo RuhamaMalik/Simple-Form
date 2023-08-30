@@ -3,14 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Homepage</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            /* background-color: #343a40; */
+            background-color: #041f3a;
+
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        button{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+                        } 
+
+            .footer {
+            background-color: #041f3a;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to our Beautiful Homepage</h1>
+        <p>Enjoy your stay!</p>
+    </div>
+    
+    <div class="content container mt-4">
+      <div class="row"><img height="350px" src="../images/home.jpg" alt=""></div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-6 mt-5 mb-5">
+                <h2 class="text-light bg-dark">About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus dui sit amet elit accumsan, eu iaculis justo vestibulum.</p>
+            </div>
+            <div class="col-md-6 mt-5 mb-5">
+                <h2 class="text-light bg-dark">Services</h2>
+                <ul>
+                    <li >Web Design</li>
+                    <li>Graphic Design</li>
+                    <li>Mobile App Development</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row"><button type="button" id="logout" class="btn btn-dark btn-lg mt-5 mb-5">LOGOUT  btn</button></div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2023 Beautiful Homepage. All rights reserved.</p>
+    </div>
+
+    <!-- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="module" src="../js/logout.js"></script>
+  </body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome</h1>
+    <h1>Welcome to </h1>
 
   <button type="button" id="logout">LOGOUT  btn</button>
 
 
   <script type="module" src="../js/logout.js"></script>
 </body>
-</html>
+</html> -->

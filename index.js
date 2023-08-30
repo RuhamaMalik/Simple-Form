@@ -11,7 +11,8 @@ signUpBtn.addEventListener('click', ()=>{
     createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       const user = userCredential.user;
-      console.log(user.email);
+      alert(`User logged out successfully \n Email : ${user,email}`);
+      window.location = "./assets/html/login.html"
     })
     .catch((error) => {
       const errorCode = error.code;
